@@ -1,0 +1,204 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8; width=device-width, initial-scale=1" name="viewport" />
+        <link href="../css/resumestyles.css" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="../js/resumejs.js"></script>
+        <script src="https://kit.fontawesome.com/a080e2d1fb.js" crossorigin="anonymous"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+		<title>Benjamin Tejas</title>
+        <style>
+            .title{grid-area: title;}
+            .menu{grid-area: menulinks;}
+            .leftboxes{grid-area: socials;}
+            .intro{grid-area: intro;}
+            .experience{grid-area: experience;}
+            .projects{grid-area: projects;}
+            .footer{grid-area: footer;}
+            .sep{grid-area: sep; background-color: white; border: 2px solid white; padding: 0px !important;}
+            .schoolexp{grid-area: schoolexp;}
+            .workexp{grid-area: workexp;}
+            
+            .grid-container{
+                display: grid;
+                grid-template-areas: 
+                    'title title menulinks'
+                    'sep sep sep'
+                    'socials intro intro'
+                    'socials experience experience'
+                    'socials projects projects'
+                    'footer footer footer';
+                grid-template-columns: 20% 40% 38%;
+                gap: 5px;
+                padding: 10px;
+            }
+            
+            .grid-container > div{
+                text-align: center;
+                background-color: black;
+                padding: 20px 0;
+                color: white;
+                font-family: 'Indie Flower', cursive;
+            }
+            
+            .experience-container{
+                display: grid;
+                grid-template-columns: 49% 49%;
+                grid-gap: 20px;
+                background-color: black;
+                padding: 15px;
+                border-radius: 10px;
+            }
+            
+            .experience-slot{
+                text-align: center;
+                background-color: black;
+                color: white;
+                font-size: 24px;
+            }
+            
+        </style>
+	</head>
+	<body style="background-color: black">
+        
+        <div class="grid-container">
+            <div class="title">
+                <h1 class="namebrand">Hi! My name is <a href="https://github.com/Btejas1" target="_blank" rel="noopener noreferrer">Benjamin Tejas</a></h1>
+            </div>
+            
+            <div class="menu">
+                <div class="topnav" id="topnav">
+                    <a href="javascript:void(0);" class="icon" onclick="hamburgerMenu()">
+                        <i class="fa fa-bars" id="bars"></i>
+                        <i class="fa-solid fa-xmark" id="cross" style="display: none"></i>
+                    </a>
+                    <a class="active" href="index.html">Home&nbsp;</a>
+                    <a href="aboutme.html">About Me&nbsp;</a>
+                    <a href="contactme.html">Contact Me&nbsp;</a>
+                    <a href="resume.html">Resume</a>
+                </div>
+            </div>
+            <div class="sep"></div>
+            <div class="leftboxes">
+                <div class="socials">
+                    <h2>Follow me on social media!</h2>
+                    <br />
+                        <a href="https://github.com/bentejas" target="_blank" rel="noreferrer noopener"><i class="fa-brands fa-github" style="display: inline; font-size: 50px; padding: 10px"></i></a>
+                        <a href="https://www.facebook.com/Btejas1" target="_blank" rel="noreferrer noopener"><i class="fa-brands fa-facebook" style="display: inline; font-size: 50px; padding: 10px"></i></a>
+                        <a href="https://www.linkedin.com/in/benjamin-tejas-42a9691ba/" target="_blank" rel="noreferrer noopener"><i class="fa-brands fa-linkedin-in" style="display: inline; font-size: 50px; padding: 10px"></i></a>
+                        <a href="https://www.twitter.com/bentejas/" target="_blank" rel="noreferrer noopener"><i class="fa-brands fa-twitter" style="display: inline; font-size: 50px; padding: 10px"></i>
+                    <br /></a>
+                    <br />
+                </div>
+                <br />
+                <div class="contactbox">
+                    <h2 style="text-align: center">Get in touch with me</h2>
+                    <form style="font-size: 30px;" action=”mailto:bentejas@hotmail.com” method=”POST” enctype=”multipart/form-data” name=”EmailForm”>
+                        Name: <br/>
+                        <input type="text" name="Contact-Name"><br />
+                        Email: <br />
+                        <input type="email" placeholder="email@example.com" name="Contact-Email"><br />
+                        Message: <br />
+                        <textarea name="Contact-Message" rows="3" cols="10"></textarea><br />
+                        <div style="text-align: center; margin-bottom: 10px;">
+                            <button class="submitButton" type="submit" value="Submit">Send</button>
+                        </div> 
+                    </form>
+                </div>
+            </div>
+            
+            <div class="intro">
+                <h2 class="sectiontitle">Intro</h2>
+                <div style="background-color: white; border: 2px solid white;"></div>
+                <p style="font-size: 20px; font-family: 'Open Sans', sans-serif; text-align: left;"><br />Hi!<br /><br />
+                        
+                I'm Ben, a 3rd-year Computer Science student at the University of Windsor, aiming to specialize web development.<br /><br />
+
+                Computers, specifically programming has always fascinated me. The ability to create something yourself that can benefit an endless amount of people. The possibilities are endless, and the moment you finish that last line of code and fix the last bug, is a feeling unmatched. <br /><br />
+
+                I am a dedicated and hard-working individual, who is always looking to adapt and learn new skills. Currently, I working as a Web Content Developer at the University of Windsor, and I am looking forward to any challenges that are thrown my way. I learn quickly and I am positive I will be a great asset to your team!<br /><br />
+
+                I have a very good understanding of Java and C++, I've also done a couple of projects in C# utilizing Unity. I am also very adept when it comes to HTML and CSS, working with Bootstrap, JS, and JQuery. Additionally, I am currently learning JS libraries such as React and Node.<br /><br />
+
+                Thank you for reading a bit about me, if you feel that I would be a good fit for your team, please send me a message.
+                </p>
+            </div>
+            
+            <div class="experience">
+                <div style="background-color: white; border: 2px solid white;"></div>
+                <h2 class="sectiontitle">Experience</h2>
+                <div style="background-color: white; border: 2px solid white;"></div>
+                <br />
+                <div class="experience-container">
+                    <div class="experience-slot">
+                        <div class="panel-group">
+                            <div class="panel panel-default">
+                              <div class="panel-heading">
+                                <h3 class="panel-title">
+                                  <a data-toggle="collapse" href="#collapse1">School Experience <i class="fa-solid fa-chevron-down" id="firstChevronD"></i><i class="fa-solid fa-chevron-up" id="firstChevronU" style="display: none;"></i></a>
+                                </h3>
+                              </div>
+                              <div id="collapse1" class="panel-collapse collapse">
+                                <div class="panel-body">Panel Body</div>
+                              </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="experience-slot">
+                        <div class="panel-group">
+                            <div class="panel panel-default">
+                              <div class="panel-heading">
+                                <h3 class="panel-title">
+                                  <a data-toggle="collapse" href="#collapse2">Work Experience <i class="fa-solid fa-chevron-down" id="secChevronD"></i><i class="fa-solid fa-chevron-up" id="secChevronU" style="display: none;"></i></a>
+                                </h3>
+                              </div>
+                              <div id="collapse2" class="panel-collapse collapse">
+                                <div class="panel-body">Panel Body</div>
+                              </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="projects">
+            
+            
+            </div>
+            
+            <div class="footer">
+            
+            
+            </div>
+            
+        </div>
+	</body>
+    <script>
+        function collapser1Dropdown(){
+            var x = 
+            if(document.getElementById("firstChevronU").style.display === "none"){
+                document.getElementById("firstChevronU").style.display = "block !important";
+                document.getElementById("firstChevronD").style.display = "none !important";
+            }else{
+                document.getElementById("firstChevronD").style.display = "block !important";
+                document.getElementById("firstChevronU").style.display = "none !important";
+            }
+        }
+        
+        function collapser1Dropdown(){
+            if(document.getElementById("secChevronU").style.display === "none"){
+                document.getElementById("secChevronU").style.display = "block !important";
+                document.getElementById("secChevronD").style.display = "none !important";
+            }else{
+                document.getElementById("secChevronD").style.display = "block !important";
+                document.getElementById("secChevronU").style.display = "none !important";
+            }
+        }
+    </script>
+</html>
